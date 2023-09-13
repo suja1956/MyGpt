@@ -29,7 +29,9 @@
                         <div class="user">
                             <i class="fa-solid fa-user-ninja"></i>
                             <p>Hi, {{request.user.username}}</p>
-                            <a href="{% url 'signout' %}">Logout</a>
+                             <a href="{% url 'signout' %}" class="btn btn-dark btn-lg">
+                                <span class="glyphicon glyphicon-log-out"></span> Log out
+                              </a>
                         </div>
                         {% if t_questions %}
                         <div class="chat-today">
